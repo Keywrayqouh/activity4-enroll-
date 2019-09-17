@@ -63,7 +63,7 @@
             var eml = $("#email").val();       
             var cyr = $("#cy").val();               
             $.ajax({
-                url: "http://localhost:8000/enroll",
+                url: "http://localhost:8080/enroll",
                 type: "POST",
                 crossDomain:true,
                 data: JSON.stringify({ sub1:sub, name1: name, email: eml, cy: cyr }),
